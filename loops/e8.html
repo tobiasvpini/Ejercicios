@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 8: while</title>
+</head>
+<body>
+    <!-- Realizar el factorial de los primeros N números. -->
+    <script>
+        let numero = prompt("Ingresa un numero para obtener su factorial: ");
+        numero = parseInt(numero);
+        let i = 1;
+        let suma = 0;
+        while(numero >= i){
+            suma += numero;
+            numero--;
+        }
+        alert(suma);
+    </script>
+</body>
+</html>

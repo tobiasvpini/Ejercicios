@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 10: while o for</title>
+</head>
+<body>
+    <!-- Determinar si un número ingresado por el usuario en un loop es primo o no, validar que el número ingresado sea mayor o igual a dos. -->
+    <script>
+        let cantidad = prompt('Cuantas veces queres ejecutar el ciclo?: ');
+        let i = 1;
+        do{
+            let numero = prompt("ingrese un numero: ");
+            if((numero % 2) == 0){
+                console.log(`El numero ${numero} no es primo.`);
+                i++;
+            } else {
+                console.log(`El numero ${numero} es primo.`);
+                i++;
+            }
+        }while(i <= cantidad);
+
+    </script>
+</body>
+</html>
