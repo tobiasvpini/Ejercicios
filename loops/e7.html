@@ -11,12 +11,31 @@
     <script>
         let numero = prompt("numero: ");
         numero = parseInt(numero);
-        let sumatoria = 0;
-        while(numero > 0){
-            sumatoria += numero;
-            numero--;
+        const sumatoriaTotal = (numero) => {
+            let i = 1;
+            let suma = 0;
+            while(i <= numero){
+                suma += i;
+                i++;
+            }
+            return suma;
         }
-        alert(sumatoria);
+        // Si recibo 10 y quiero desde 3 hasta 5 tiene que retornar 13..
+        const sumatoriaParcial = (numero) => {
+            let desde = prompt("A partir de que digito?: ");
+            let hasta = prompt("hasta cual queres sumar?: ");
+            desde = parseInt(desde);
+            hasta = parseInt(hasta);
+            let suma = 0;
+            while(desde <= hasta){
+                suma +=  desde;
+                desde++;
+            }
+            return suma;
+        }        
+        let sumatoria = sumatoriaTotal(numero);
+        let parcial = sumatoriaParcial(numero);
+        console.log(`El resultado de la sumatoria total es: ${sumatoria}.\nEl resultado de la sumatoria parcial es: ${parcial}.`);
     </script>
 </body>
 </html>
