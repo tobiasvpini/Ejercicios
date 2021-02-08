@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 7: While</title>
+</head>
+<body>
+    <!-- Realizar la sumatoria de los primeros N números, donde N es ingresado por el usuario. -->
+    <script>
+        let numero = prompt("numero: ");
+        numero = parseInt(numero);
+        let sumatoria = 0;
+        while(numero > 0){
+            sumatoria += numero;
+            numero--;
+        }
+        alert(sumatoria);
+    </script>
+</body>
+</html>
