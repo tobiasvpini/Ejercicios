@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 9</title>
+</head>
+<body>
+    <!-- Determinar si una palabra empieza con mayúscula o no -->
+    <script>
+        let initYear = 1900;
+        let finalYear = 2050;
+        for (initYear; initYear <= finalYear; initYear ++){
+            if (((initYear % 4 == 0) && (initYear % 100 != 0 )) || (initYear % 400 == 0)){
+            document.writeln( initYear + ' Es bisiesto. ');
+            }
+            else alert("No es bisiesto.");
+        }
+    </script>
+</body>
+</html>

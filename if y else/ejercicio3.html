@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+</head>
+<body>
+    <!-- Crear un programa que determine si un número introducido en un popup es divisible por 11 y 5 o no, mostrar el resultado con console.log -->
+    <script>
+        let numero = prompt('numero: ');
+        let numeroParseado = parseInt(numero);
+        const esSuperDivisible = (numero) => {
+            if((numero / 5) == 0 && (numero / 11) == 0){
+                alert('Es super divisible.')
+            }
+        }
+    </script>
+</body>
+</html>

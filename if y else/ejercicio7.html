@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 7</title>
+</head>
+<body>
+    <!-- Crear un programa donde se introduzcan los tres ángulos internos de un triángulo y se determine si el triángulo es válido o no. -->
+    <script>
+        let angulo1 = 10, angulo2 = 20, angulo3 = 40;
+        const esValido = (angulo1, angulo2, angulo3) => {
+            if((angulo1 + angulo2) > angulo3){
+                confirm(`El triangulo es valido.`);
+            } else alert(`Peligro!!`);
+        }
+
+        esValido(angulo1,angulo2,angulo3);
+    </script>
+</body>
+</html>

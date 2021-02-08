@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 8</title>
+</head>
+<body>
+    <!-- Determinar si una palabra empieza con mayúscula o no. -->
+    <script>
+        let palabra = prompt('mensaje: ');
+        const startWithUpperCase = (palabra) => {
+            let str = palabra.substr(0, 1);
+            if(str === str.toUpperCase()){
+                alert(`Empieza con mayúscula.`);
+            } else alert(`Empieza con minúscula.`);
+        }
+        startWithUpperCase(palabra);
+
+    </script>
+</body>
+</html>
