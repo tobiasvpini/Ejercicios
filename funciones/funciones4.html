@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funciones</title>
+</head>
+<body>
+    <!-- Crear una función que reciba un número entero y muestre un error si el tipo de dato pasado es de otro tipo. -->
+    <script>
+        function checkTypeOf(dato){
+            if(typeof dato == typeof parseInt(dato) || typeof dato == typeof parseFloat(dato)){
+                console.log("Muy bien, segui asi.");
+            } else {
+                throw Error("Si no sos numero no podes pasar.")
+            }
+        }
+        let dato = "7.9";
+        checkTypeOf(dato);
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <!-- Dado un array que contiene ["azul", "amarillo", "rojo", "verde", "café", "rosa"] determinar si un color introducido por el usuario a través de un prompt se encuentra dentro del array o no. -->
+    <script>
+        let arrayColores = ["azul", "amarillo", "rojo", "verde", "café", "rosa"];
+        let color = prompt("Ingresa un color: ");
+        if(arrayColores.includes(color)){
+            for(let i = 0; i < arrayColores.length; i++){
+                if(arrayColores[i].includes(color)){
+                    console.log(`El color ${color} se encuentra en el arreglo de colores. Se encuentra en la posición ${arrayColores.indexOf(color, i)}.`);
+                } 
+            }
+        } else console.log("El color no se encuentra en el arreglo.");
+    </script>
+</body>
+</html>

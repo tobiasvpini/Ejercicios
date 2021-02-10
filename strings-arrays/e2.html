@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings y Arrays</title>
+</head>
+<body>
+    <!-- Convertir un array ingresado dentro del código en un string (existe un método en javascript para hacerlo) -->
+    <script>
+        const array = ["Hola ", "soy ", "Tobias", ". ", "Estoy ", "practicando ", "un ", "poco ", "de ", "Javascript."];
+        const string = array.reduce((oracion, palabra) => oracion + palabra);
+        
+        console.log(string);
+    </script>
+</body>
+</html>

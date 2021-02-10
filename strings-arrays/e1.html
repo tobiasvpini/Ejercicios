@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings y arrays</title>
+</head>
+<body>
+    <!-- El usuario ingrese un string con varias palabras separadas por coma en un popup y se deben convertir en un array, (el usuario ingresa: "1,2,3,4,5" y se convierte en [1,2,3,4,5]) -->
+    <script>
+        let cadena = prompt("Ingresa una cadena a guardar en el arreglo.");
+        let arregloFromStrings = cadena.split(", ");
+        for(let i = 0; i < arregloFromStrings; i++){
+            arregloFromStrings[i].trim();
+        }
+        console.log(arregloFromStrings);
+    </script>
+</body>
+</html>

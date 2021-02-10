@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <script>
+    // Dado el array = [1,2,3,4,5,6]
+    let array = [1,2,3,4,5,6];
+    
+    // Iterar por todos los elementos dentro de un array utilizando      while y mostrarlos en pantalla.
+    let i = 0;
+    console.log("Ciclo while");
+    while(i < array.length){
+        console.log(array[i]);
+        i++;
+    }
+    
+    // Iterar por todos los elementos dentro de un array utilizando for y mostrarlos en pantalla.
+    console.log("Ciclo for");
+    for(let i = 0; i < array.length; i++){
+        console.log(array[i]);
+    }
+    
+    // Iterar por todos los elementos dentro de un array utilizando .forEach y mostrarlos en pantalla.
+    console.log("Ciclo forEach");
+    array.forEach(elemento => console.log(elemento));
+    
+    // Mostrar todos los elementos dentro de un array sumándole uno a cada uno.
+    console.log("Array + 1");
+    array.map(elemento => console.log(elemento + 1));
+    
+    // Generar una copia de un array pero con todos los elementos incrementado en 1.
+    console.log("Nuevo Array")
+    let nuevoArray = array.map(elemento => elemento + 1);
+    console.log(nuevoArray);
+    
+    // Calcular el promedio
+    let dividir = array.length;
+    let resultado = array.reduce((acumulador, currentValue) =>  acumulador + currentValue) / dividir; 
+    console.log(resultado);
+    </script>
+   
+
+
+</body>
+</html>
