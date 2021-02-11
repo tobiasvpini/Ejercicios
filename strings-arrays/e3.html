@@ -10,9 +10,28 @@
     <h1>Union, interseccion y conteo</h1>
     <!-- Existen dos arrays, cada uno con 5 palabras, generar un nuevo array con la intersección de ambos elementos. (Ejemplo: [1,2,3] unión [1,2,4] = [1,2] -->
     <script>
+        let array1 = ["Hola", "1", "xd", "2", "f", "estas"];
+        let array2 = ["1", "bien", "2", "Hola", "f", "estas"];
+        let interseccion = [];
+        // let i = 0, j = 0;
+        let c = 0;
+        for(let i = 0; i < array1.length; i++){
+            for(let j = 0; j < array2.length; j++){
+                if(array1[i] === array2[j]){
+                    interseccion[c] = array1[i];
+                    c++;
+                }
+            }
+        }
+        let i = 0;
+        while(i < interseccion.length){
+            if(interseccion.includes(" ")){
+                interseccion.splice(i, 1);
+            }
+            i++;
+        }
         
-
-
+        console.log(interseccion);
     </script>
 </body>
 </html>

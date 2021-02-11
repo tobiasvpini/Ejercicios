@@ -8,9 +8,56 @@
 </head>
 <body>
     <h1>Union, interseccion y conteo</h1>
+    <div id="primer-array"> <span>Primer Arreglo</span> </div>
+    <div id="segundo-array"> <span>Segundo Arreglo</span> </div>
+    <div id="resultado"> <span>Resultado</span> </div>
+    <button id="cargar">Cargar Arreglos</button>
+    <button id="sumar">Sumar contenido</button>
     <!-- El usuario ingresa dos conjuntos de números separados por coma, si ambos conjuntos tienen la misma cantidad de elementos mostrar un arreglo que contenga la suma de cada elemento. (Ejemplo: [1,2,3] + [2,3,4] = [3,5,7]) -->
     <script>
-
+        let arr1 = [];
+        let arr2 = [];
+        let resultado = [];
+        let i = 0, j = 0;
+        document.getElementById("cargar").addEventListener('click', () => {
+            let letra = " ";
+            let cual = prompt("Hola, que arreglo te gustaría cargar? (1-2)");
+            switch(cual){
+            case "1": 
+                alert("Vamos a cargar el primer arreglo.");
+                do{
+                    let numero = prompt("Ingresa un numero: ");
+                    numero = parseInt(numero);
+                    arr1[i] = numero;
+                    letra = prompt("Queres cargar otro numero? (s/n): ");
+                    document.getElementById('primer-array').innerHTML += arr1[i];
+                    i++;
+                }while(letra === 's');
+                break;
+            case "2": 
+            alert("Vamos a cargar el segundo arreglo.");
+                do{
+                    let numero = prompt("Ingresa un numero: ");
+                    numero = parseInt(numero);
+                    arr2[j] = numero;
+                    letra = prompt("Queres cargar otro numero? (s/n): ");
+                    document.getElementById('segundo-array').innerHTML += arr2[j];
+                    j++;
+                }while(letra === 's');
+                break;
+            default: alert("Loco, tenes que elegir 1 o 2.")
+            }
+        })
+        document.getElementById('sumar').addEventListener('click', () => {
+            let i = 0, j = 0;
+                for(i; i < arr1.length; i++){
+                    if(arr1.length === arr2.length){
+                        resultado[i] = arr1[i] + arr2[i];
+                    }                   
+                    else console.warn(`Los arreglos no tienen la misma dimensión`);
+                }
+                document.getElementById('resultado').innerHTML += resultado;
+        })
 
 
 

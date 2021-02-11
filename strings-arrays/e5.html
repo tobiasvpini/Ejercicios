@@ -9,8 +9,49 @@
 <body>   
     <h1>Union, interseccion y conteo</h1>
     <!-- El usuario ingresa dos conjuntos de números separados por coma, el programa debe determinar si ambos conjuntos tienen la misma cantidad de números. -->
+    <button id="button">Cargar arreglo</button>
     <script>
-
+        let arr1 = [];
+        let arr2 = [];
+        let i = 0;
+        let j = 0;
+        document.getElementById("button").addEventListener("click", () => { 
+            let letra = " ";
+            let cual = prompt("Hola, que arreglo te gustaría cargar? (1-2)");
+            switch(cual){
+            case "1": 
+                alert("Vamos a cargar el primer arreglo.");
+                do{
+                    let numero = prompt("Ingresa un numero: ");
+                    numero = parseInt(numero);
+                    arr1[i] = numero;
+                    letra = prompt("Queres cargar otro numero? (s/n): ");
+                    i++;
+                }while(letra === 's');
+                console.log(arr1);
+                break;
+            case "2": 
+            alert("Vamos a cargar el segundo arreglo.");
+                do{
+                    let numero = prompt("Ingresa un numero: ");
+                    numero = parseInt(numero);
+                    arr2[j] = numero;
+                    letra = prompt("Queres cargar otro numero? (s/n): ");
+                    j++;
+                }while(letra === 's');
+                console.log(arr2);
+                break;
+            default: alert("Loco, tenes que elegir 1 o 2.")
+            }
+            const comprobarIgualdad = (arr1, arr2) => {
+                if(arr1.length === arr2.length){
+                    console.log(`Ambos arreglos poseen una dimension de: ${arr1.length}`);
+                } else console.log(`Tienen distinta dimension, el primero tiene: ${arr1.length} mientras que el segundo tiene una dimension de: ${arr2.length}`);
+            } 
+            comprobarIgualdad(arr1, arr2);
+        });
+        
+        
 
 
     </script>
